@@ -40,7 +40,7 @@ class App extends Component{
     }
 
     componentDidMount() {
-        fetch('http://dummy.restapiexample.com/api/v1/employees')
+        fetch('https://dummy.restapiexample.com/api/v1/employees')
             .then(response => response.json())
             .then(usersJSON => this.setState({ monsters: usersJSON.data }) /*console.log(usersJSON.data)*/);
     }
